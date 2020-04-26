@@ -1,0 +1,432 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "91de3c1c040badd1fa60e10d1fcced0b",
+    "packages": [
+        {
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+                "reference": "c8c9aa8a14cc3d3bec86d0a8c3fa52ea79936855",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-25T05:50:16+00:00"
+        },
+        {
+            "name": "jean85/pretty-package-versions",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jean85/pretty-package-versions.git",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/a917488320c20057da87f67d0d40543dd9427f7a",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/package-versions-deprecated": "^1.8.0",
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0|^8.5|^9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jean85\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Lai",
+                    "email": "alessandro.lai85@gmail.com"
+                }
+            ],
+            "description": "A wrapper for ocramius/package-versions to get pretty versions strings",
+            "keywords": [
+                "composer",
+                "package",
+                "release",
+                "versions"
+            ],
+            "time": "2020-09-14T08:43:34+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "b35af66631a11ee730ff1fde295f71e89f01f121"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/b35af66631a11ee730ff1fde295f71e89f01f121",
+                "reference": "b35af66631a11ee730ff1fde295f71e89f01f121",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.8",
+                "jean85/pretty-package-versions": "^1.2",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4 || ^8.3",
+                "sebastian/comparator": "^2.0 || ^3.0",
+                "squizlabs/php_codesniffer": "^3.5, <3.5.5",
+                "symfony/phpunit-bridge": "^4.4@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Braun",
+                    "email": "andreas.braun@mongodb.com"
+                },
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2020-09-22T13:26:09+00:00"
+        },
+        {
+            "name": "yosmy/mongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/mongo.git",
+                "reference": "eaa777ea598a27f8adea87359f7403b75d424b04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/mongo/zipball/eaa777ea598a27f8adea87359f7403b75d424b04",
+                "reference": "eaa777ea598a27f8adea87359f7403b75d424b04",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mongodb": "*",
+                "mongodb/mongodb": "~1",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Mongo\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/mongo/tree/master",
+                "issues": "https://github.com/yosmy/mongo/issues"
+            },
+            "time": "2020-10-31T16:31:40+00:00"
+        },
+        {
+            "name": "yosmy/phone-carrier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/phone-carrier.git",
+                "reference": "b9c4750e1752e32ab1dbc4ab361a2f78d60ff652"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/phone-carrier/zipball/b9c4750e1752e32ab1dbc4ab361a2f78d60ff652",
+                "reference": "b9c4750e1752e32ab1dbc4ab361a2f78d60ff652",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mongodb": "*",
+                "php": ">=7.2",
+                "yosmy/mongo": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/phone-carrier/tree/master",
+                "issues": "https://github.com/yosmy/phone-carrier/issues"
+            },
+            "time": "2020-10-20T02:15:28+00:00"
+        },
+        {
+            "name": "yosmy/phone-carrier-lookup",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/phone-carrier-lookup.git",
+                "reference": "1b785d7ef3b86f32e7420bc63ea68ff6367a8c1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/phone-carrier-lookup/zipball/1b785d7ef3b86f32e7420bc63ea68ff6367a8c1d",
+                "reference": "1b785d7ef3b86f32e7420bc63ea68ff6367a8c1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Phone\\Carrier\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/phone-carrier-lookup/tree/master",
+                "issues": "https://github.com/yosmy/phone-carrier-lookup/issues"
+            },
+            "time": "2020-10-10T04:49:35+00:00"
+        },
+        {
+            "name": "yosmy/phone-classification",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/phone-classification.git",
+                "reference": "1607e5764a774796f165d8265c640565a0697266"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/phone-classification/zipball/1607e5764a774796f165d8265c640565a0697266",
+                "reference": "1607e5764a774796f165d8265c640565a0697266",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mongodb": "*",
+                "mongodb/mongodb": "~1",
+                "php": ">=7.2",
+                "yosmy/phone-carrier": "@dev",
+                "yosmy/phone-carrier-lookup": "@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8",
+                "symfony/debug": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Phone\\": [
+                        "src"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yosmy\\Phone\\Test\\": [
+                        "test/setup",
+                        "test/src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/phone-classification/tree/master",
+                "issues": "https://github.com/yosmy/phone-classification/issues"
+            },
+            "time": "2020-10-10T15:56:52+00:00"
+        },
+        {
+            "name": "yosmy/phone-verification",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/phone-verification.git",
+                "reference": "31f8081a5ffc030f802e9a69b18e993a84310881"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/phone-verification/zipball/31f8081a5ffc030f802e9a69b18e993a84310881",
+                "reference": "31f8081a5ffc030f802e9a69b18e993a84310881",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2",
+                "yosmy/phone-verification-process": "@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8",
+                "symfony/debug": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Phone\\": [
+                        "src"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yosmy\\Phone\\Test\\": [
+                        "tests"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/phone-verification/tree/master",
+                "issues": "https://github.com/yosmy/phone-verification/issues"
+            },
+            "time": "2020-10-19T02:08:05+00:00"
+        },
+        {
+            "name": "yosmy/phone-verification-process",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/phone-verification-process.git",
+                "reference": "85bf1bd57823322815c28a1dfb40d5f017144e96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/phone-verification-process/zipball/85bf1bd57823322815c28a1dfb40d5f017144e96",
+                "reference": "85bf1bd57823322815c28a1dfb40d5f017144e96",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Phone\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/phone-verification-process/tree/master",
+                "issues": "https://github.com/yosmy/phone-verification-process/issues"
+            },
+            "time": "2020-06-29T21:58:03+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "yosmy/phone-verification": 20,
+        "yosmy/phone-classification": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.2"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
